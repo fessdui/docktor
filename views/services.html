@@ -1,0 +1,86 @@
+{% include 'template/header.html' %}
+<body>
+{% include 'template/menu.html' %}
+<div id="container" class="container services">
+    <div id="content" class="main-content">
+        {% include 'template/post-head.html' %}
+        <div class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+        <div class="services" name="services">
+            <h2>Наши Услуги</h2>
+            <ul class="services-list">
+                <li class="service">
+                    <a href="/services/dropper">
+                        <div class="left">
+                            <span class="dropper service-ico"></span>
+                            <span>Капельницы</span>
+                        </div>
+                        <div class="right">
+                            <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="service">
+                    <a href="/services/puncture">
+                        <div class="left">
+                            <span class="puncture service-ico"></span>
+                            <span>Уколы</span>
+                        </div>
+                        <div class="right">
+                            <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="service">
+                    <a href="/services/dressings">
+                        <div class="left">
+                            <span class="dressings service-ico"></span>
+                            <span>Перевязки</span>
+                        </div>
+                        <div class="right">
+                            <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="service">
+                    <a href="/services/enemas">
+                        <div class="left">
+                            <span class="enemas service-ico"></span>
+                            <span>Клизмы</span>
+                        </div>
+                        <div class="right">
+                            <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="service">
+                    <a href="/services/patronage">
+                        <div class="left">
+                            <span class="patronage service-ico"></span>
+                        </div>
+                        <span>Патронаж</span>
+                        <div class="right">
+                            <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="service">
+                    <a href="/services/poisoning">
+                        <div class="left">
+                            <span class="poisoning service-ico"></span>
+                            <span>Лечение отравлений</span>
+                        </div>
+                        <div class="right">
+                            <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        {% include 'template/order_popup.html' %}
+    </div>
+</div>
+{% include 'template/footer.html' %}
+</body>
+{% include 'template/footer_js.html' %}

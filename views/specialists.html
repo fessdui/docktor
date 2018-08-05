@@ -1,0 +1,26 @@
+{% include 'template/header.html' %}
+<body>
+{% include 'template/menu.html' %}
+<div id="container" class="container">
+    <div id="content" class="main-content">
+        {% include 'template/post-head.html' %}
+        <div class="specialists">
+            <h2>Наши специалисты</h2>
+            <ul>
+                {% for specialist in specialists %}
+                <li class="specialist">
+                    <span class="image"> <img src="{{ specialist.image|e }}" alt=""> </span>
+                    <span class="description">{{ specialist.stage|e }} лет <br> {{ specialist.desc|e }} </span>
+                    
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% include 'template/order_popup.html' %}
+    </div>
+</div>
+{% include 'template/footer.html' %}
+</body>
+{% include 'template/footer_js.html' %}
+
+

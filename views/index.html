@@ -1,0 +1,87 @@
+{% include 'template/header.html' %}
+<body>
+{% include 'template/menu.html' %}
+<div id="container" class="container">
+    <div id="content" class="main-content">
+        {% include 'template/post-head.html' %}
+        <div class="info-why">
+            <ul>
+                <li>
+                    <p class="title">Надежно</p>
+                    <p class="description">Опытные медсестры с профильными сертификатами</p>
+                </li>
+                <li>
+                    <p class="title">Безопасно</p>
+                    <p class="description">Только одноразовый стерильные инструменты </p>
+                </li>
+                <li>
+                    <p class="title"> Удобно</p>
+                    <p class="description">Выезд в день обращения. Гибкий график.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="services" name="services">
+            <h2>Наши Услуги</h2>
+            <ul class="services-list">
+                <li class="service">
+                    <span class="dropper service-ico"></span>
+                    <span>Капельницы</span>
+                    <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                </li>
+                <li class="service">
+                    <span class="puncture service-ico"></span>
+                    <span>Уколы</span>
+                    <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                </li>
+                <li class="service">
+                    <span class="dressings service-ico"></span>
+                    <span>Перевязки</span>
+                    <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                </li>
+                <li class="service">
+                    <span class="enemas service-ico"></span>
+                    <span>Клизмы</span>
+                    <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                </li>
+                <li class="service">
+                    <span class="patronage service-ico"></span>
+                    <span>Патронаж</span>
+                    <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                </li>
+                <li class="service">
+                    <span class="poisoning service-ico"></span>
+                    <span>Лечение отравлений</span>
+                    <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                </li>
+            </ul>
+        </div>
+        <div class="sertificates">
+            <h2>Сертификаты</h2>
+            <ul>
+                <li> <img src="http://placekitten.com/g/200/150" alt=""></li>
+                <li> <img src="http://placekitten.com/g/200/150" alt=""></li>
+                <li> <img src="http://placekitten.com/g/200/150" alt=""></li>
+            </ul>
+        </div>
+        <div class="contacts">
+            <h2>Контакты</h2>
+            <ul class="contact">
+                <li>Москва</li>
+                <li>08:00-20:00 (звонки c 08:00 до 22:00)</li>
+                <li>8-929-502-0466</li>
+                <li>uferev.aleksey25@gmail.com</li>
+            </ul>
+
+            <div>
+                <p>Свяжитесь с нами в удобной для вас форме или <span class="nav-item"><a class="nav-link" href="#" data-href="leave-order">оставьте заявку</a></span> прямо через наш сайт!</p>
+            </div>
+
+            <div class="offer">Позвоните и закажите выезд медсестры на дом, мы обязательно Вам поможем!</div>
+
+        </div>
+        {% include 'template/order_popup.html' %}
+    </div>
+</div>
+{% include 'template/footer.html' %}
+</body>
+{% include 'template/footer_js.html' %}

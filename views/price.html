@@ -1,0 +1,49 @@
+{% include 'template/header.html' %}
+<body>
+{% include 'template/menu.html' %}
+<div id="container" class="container">
+    <div id="content" class="main-content">
+        {% include 'template/post-head.html' %}
+        <div class="cost">
+            <h2>Наши цены</h2>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Услуга</th>
+                    <th scope="col">Стоимость</th>
+                    <th scope="col">Описание</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Капельница</td>
+                    <td>1100 <span>*</span></td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                </tr>
+                <tr>
+                    <td>Капельница</td>
+                    <td>1100<span>*</span></td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                </tr>
+                <tr>
+                    <td>Капельница</td>
+                    <td>1100<span>*</span></td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                </tr>
+                <tr>
+                    <td>Капельница</td>
+                    <td>1100<span>*</span></td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="sale">
+                * - пенсионерам и инвалидам скидка 10%
+            </div>
+        </div>
+        {% include 'template/order_popup.html' %}
+    </div>
+</div>
+{% include 'template/footer.html' %}
+</body>
+{% include 'template/footer_js.html' %}
